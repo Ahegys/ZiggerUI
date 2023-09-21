@@ -1,0 +1,1210 @@
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_X86 failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-qArSRA
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f2a0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f2a0f.dir/build.make CMakeFiles/cmTC_f2a0f.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-qArSRA'
+Building C object CMakeFiles/cmTC_f2a0f.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DCHECK_CPU_ARCHITECTURE_X86   -o CMakeFiles/cmTC_f2a0f.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-qArSRA/src.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-qArSRA/src.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-qArSRA/src.c:6:3: error: ‘choke’ undeclared (first use in this function)
+    6 |   choke
+      |   ^~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-qArSRA/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-qArSRA/src.c:6:8: error: expected ‘;’ before ‘}’ token
+    6 |   choke
+      |        ^
+      |        ;
+    7 | #endif
+    8 | }
+      | ~       
+gmake[1]: *** [CMakeFiles/cmTC_f2a0f.dir/build.make:78: CMakeFiles/cmTC_f2a0f.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-qArSRA'
+gmake: *** [Makefile:127: cmTC_f2a0f/fast] Error 2
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__i386__) || defined(__i486__) || defined(__i586__) || defined(__i686__) ||defined( __i386) || defined(_M_IX86)
+  return 0;
+#else
+  choke
+#endif
+}
+
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_X64 failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-I8Qmst
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_73868/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_73868.dir/build.make CMakeFiles/cmTC_73868.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-I8Qmst'
+Building C object CMakeFiles/cmTC_73868.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DCHECK_CPU_ARCHITECTURE_X64   -o CMakeFiles/cmTC_73868.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-I8Qmst/src.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-I8Qmst/src.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-I8Qmst/src.c:6:3: error: ‘choke’ undeclared (first use in this function)
+    6 |   choke
+      |   ^~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-I8Qmst/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-I8Qmst/src.c:6:8: error: expected ‘;’ before ‘}’ token
+    6 |   choke
+      |        ^
+      |        ;
+    7 | #endif
+    8 | }
+      | ~       
+gmake[1]: *** [CMakeFiles/cmTC_73868.dir/build.make:78: CMakeFiles/cmTC_73868.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-I8Qmst'
+gmake: *** [Makefile:127: cmTC_73868/fast] Error 2
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__amd64__) || defined(__amd64) || defined(__x86_64__) || defined(__x86_64) || defined(_M_X64) || defined(_M_AMD64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM64 failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-vXKhV9
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9883e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9883e.dir/build.make CMakeFiles/cmTC_9883e.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-vXKhV9'
+Building C object CMakeFiles/cmTC_9883e.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DCHECK_CPU_ARCHITECTURE_ARM64   -o CMakeFiles/cmTC_9883e.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-vXKhV9/src.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-vXKhV9/src.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-vXKhV9/src.c:6:3: error: ‘choke’ undeclared (first use in this function)
+    6 |   choke
+      |   ^~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-vXKhV9/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-vXKhV9/src.c:6:8: error: expected ‘;’ before ‘}’ token
+    6 |   choke
+      |        ^
+      |        ;
+    7 | #endif
+    8 | }
+      | ~       
+gmake[1]: *** [CMakeFiles/cmTC_9883e.dir/build.make:78: CMakeFiles/cmTC_9883e.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-vXKhV9'
+gmake: *** [Makefile:127: cmTC_9883e/fast] Error 2
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__aarch64__) || defined(_M_ARM64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_LOONGARCH64 failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-bBfEWi
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a9dac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a9dac.dir/build.make CMakeFiles/cmTC_a9dac.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-bBfEWi'
+Building C object CMakeFiles/cmTC_a9dac.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DCHECK_CPU_ARCHITECTURE_LOONGARCH64   -o CMakeFiles/cmTC_a9dac.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-bBfEWi/src.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-bBfEWi/src.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-bBfEWi/src.c:6:3: error: ‘choke’ undeclared (first use in this function)
+    6 |   choke
+      |   ^~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-bBfEWi/src.c:6:3: note: each undeclared identifier is reported only once for each function it appears in
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-bBfEWi/src.c:6:8: error: expected ‘;’ before ‘}’ token
+    6 |   choke
+      |        ^
+      |        ;
+    7 | #endif
+    8 | }
+      | ~       
+gmake[1]: *** [CMakeFiles/cmTC_a9dac.dir/build.make:78: CMakeFiles/cmTC_a9dac.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-bBfEWi'
+gmake: *** [Makefile:127: cmTC_a9dac/fast] Error 2
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__loongarch64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+
+Determining if the include file immintrin.h exists failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-x6c9wz
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_939a0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_939a0.dir/build.make CMakeFiles/cmTC_939a0.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-x6c9wz'
+Building C object CMakeFiles/cmTC_939a0.dir/CheckIncludeFile.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_939a0.dir/CheckIncludeFile.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-x6c9wz/CheckIncludeFile.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-x6c9wz/CheckIncludeFile.c:1:10: fatal error: immintrin.h: No such file or directory
+    1 | #include <immintrin.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_939a0.dir/build.make:78: CMakeFiles/cmTC_939a0.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-x6c9wz'
+gmake: *** [Makefile:127: cmTC_939a0/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-iCLKtJ
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c5bce/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c5bce.dir/build.make CMakeFiles/cmTC_c5bce.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-iCLKtJ'
+Building C object CMakeFiles/cmTC_c5bce.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DHAVE_ALTIVEC_H_HDR  -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos" -maltivec -o CMakeFiles/cmTC_c5bce.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-iCLKtJ/src.c
+arm-linux-gnueabihf-gcc: error: unrecognized command-line option ‘-maltivec’
+gmake[1]: *** [CMakeFiles/cmTC_c5bce.dir/build.make:78: CMakeFiles/cmTC_c5bce.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-iCLKtJ'
+gmake: *** [Makefile:127: cmTC_c5bce/fast] Error 2
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+
+Performing C SOURCE FILE Test CPU_SUPPORTS_ALTIVEC failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MhmBDT
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_faafd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_faafd.dir/build.make CMakeFiles/cmTC_faafd.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MhmBDT'
+Building C object CMakeFiles/cmTC_faafd.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DCPU_SUPPORTS_ALTIVEC  -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos" -maltivec -o CMakeFiles/cmTC_faafd.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MhmBDT/src.c
+arm-linux-gnueabihf-gcc: error: unrecognized command-line option ‘-maltivec’
+gmake[1]: *** [CMakeFiles/cmTC_faafd.dir/build.make:78: CMakeFiles/cmTC_faafd.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MhmBDT'
+gmake: *** [Makefile:127: cmTC_faafd/fast] Error 2
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+
+Determining if the include file libunwind.h exists failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-JiHoSs
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_14c87/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_14c87.dir/build.make CMakeFiles/cmTC_14c87.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-JiHoSs'
+Building C object CMakeFiles/cmTC_14c87.dir/CheckIncludeFile.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_14c87.dir/CheckIncludeFile.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-JiHoSs/CheckIncludeFile.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-JiHoSs/CheckIncludeFile.c:1:10: fatal error: libunwind.h: No such file or directory
+    1 | #include <libunwind.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_14c87.dir/build.make:78: CMakeFiles/cmTC_14c87.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-JiHoSs'
+gmake: *** [Makefile:127: cmTC_14c87/fast] Error 2
+
+
+
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MtMa9O
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c1d0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c1d0f.dir/build.make CMakeFiles/cmTC_c1d0f.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MtMa9O'
+Building C object CMakeFiles/cmTC_c1d0f.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_c1d0f.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MtMa9O/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MtMa9O/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MtMa9O/CheckSymbolExists.c:14:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
+   14 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MtMa9O/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_c1d0f.dir/build.make:78: CMakeFiles/cmTC_c1d0f.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-MtMa9O'
+gmake: *** [Makefile:127: cmTC_c1d0f/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4GSawQ
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66093/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66093.dir/build.make CMakeFiles/cmTC_66093.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4GSawQ'
+Building C object CMakeFiles/cmTC_66093.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_66093.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4GSawQ/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4GSawQ/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4GSawQ/CheckSymbolExists.c:14:19: error: ‘strlcat’ undeclared (first use in this function); did you mean ‘strncat’?
+   14 |   return ((int*)(&strlcat))[argc];
+      |                   ^~~~~~~
+      |                   strncat
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4GSawQ/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_66093.dir/build.make:78: CMakeFiles/cmTC_66093.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4GSawQ'
+gmake: *** [Makefile:127: cmTC_66093/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strrev exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xYWV6X
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_10f6a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_10f6a.dir/build.make CMakeFiles/cmTC_10f6a.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xYWV6X'
+Building C object CMakeFiles/cmTC_10f6a.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_10f6a.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xYWV6X/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xYWV6X/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xYWV6X/CheckSymbolExists.c:14:19: error: ‘_strrev’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strrev))[argc];
+      |                   ^~~~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xYWV6X/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_10f6a.dir/build.make:78: CMakeFiles/cmTC_10f6a.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xYWV6X'
+gmake: *** [Makefile:127: cmTC_10f6a/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strrev
+  return ((int*)(&_strrev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strupr exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-63LQhR
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_86368/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_86368.dir/build.make CMakeFiles/cmTC_86368.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-63LQhR'
+Building C object CMakeFiles/cmTC_86368.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_86368.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-63LQhR/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-63LQhR/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-63LQhR/CheckSymbolExists.c:14:19: error: ‘_strupr’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strupr))[argc];
+      |                   ^~~~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-63LQhR/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_86368.dir/build.make:78: CMakeFiles/cmTC_86368.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-63LQhR'
+gmake: *** [Makefile:127: cmTC_86368/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strupr
+  return ((int*)(&_strupr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strlwr exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-AKEjXR
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0e5f1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0e5f1.dir/build.make CMakeFiles/cmTC_0e5f1.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-AKEjXR'
+Building C object CMakeFiles/cmTC_0e5f1.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_0e5f1.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-AKEjXR/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-AKEjXR/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-AKEjXR/CheckSymbolExists.c:14:19: error: ‘_strlwr’ undeclared (first use in this function)
+   14 |   return ((int*)(&_strlwr))[argc];
+      |                   ^~~~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-AKEjXR/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_0e5f1.dir/build.make:78: CMakeFiles/cmTC_0e5f1.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-AKEjXR'
+gmake: *** [Makefile:127: cmTC_0e5f1/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strlwr
+  return ((int*)(&_strlwr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the itoa exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-WMxJTs
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_30cec/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_30cec.dir/build.make CMakeFiles/cmTC_30cec.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-WMxJTs'
+Building C object CMakeFiles/cmTC_30cec.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_30cec.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-WMxJTs/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-WMxJTs/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-WMxJTs/CheckSymbolExists.c:14:19: error: ‘itoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&itoa))[argc];
+      |                   ^~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-WMxJTs/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_30cec.dir/build.make:78: CMakeFiles/cmTC_30cec.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-WMxJTs'
+gmake: *** [Makefile:127: cmTC_30cec/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef itoa
+  return ((int*)(&itoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ltoa exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-38Tssn
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e52ac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e52ac.dir/build.make CMakeFiles/cmTC_e52ac.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-38Tssn'
+Building C object CMakeFiles/cmTC_e52ac.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_e52ac.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-38Tssn/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-38Tssn/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-38Tssn/CheckSymbolExists.c:14:19: error: ‘_ltoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ltoa))[argc];
+      |                   ^~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-38Tssn/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_e52ac.dir/build.make:78: CMakeFiles/cmTC_e52ac.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-38Tssn'
+gmake: *** [Makefile:127: cmTC_e52ac/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ltoa
+  return ((int*)(&_ltoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _uitoa exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-VByzAx
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_38607/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_38607.dir/build.make CMakeFiles/cmTC_38607.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-VByzAx'
+Building C object CMakeFiles/cmTC_38607.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_38607.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-VByzAx/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-VByzAx/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-VByzAx/CheckSymbolExists.c:14:19: error: ‘_uitoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_uitoa))[argc];
+      |                   ^~~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-VByzAx/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_38607.dir/build.make:78: CMakeFiles/cmTC_38607.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-VByzAx'
+gmake: *** [Makefile:127: cmTC_38607/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _uitoa
+  return ((int*)(&_uitoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ultoa exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-1COLuL
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bc6b9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bc6b9.dir/build.make CMakeFiles/cmTC_bc6b9.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-1COLuL'
+Building C object CMakeFiles/cmTC_bc6b9.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_bc6b9.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-1COLuL/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-1COLuL/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-1COLuL/CheckSymbolExists.c:14:19: error: ‘_ultoa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ultoa))[argc];
+      |                   ^~~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-1COLuL/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_bc6b9.dir/build.make:78: CMakeFiles/cmTC_bc6b9.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-1COLuL'
+gmake: *** [Makefile:127: cmTC_bc6b9/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ultoa
+  return ((int*)(&_ultoa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _i64toa exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xCnyyx
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d8f5c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d8f5c.dir/build.make CMakeFiles/cmTC_d8f5c.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xCnyyx'
+Building C object CMakeFiles/cmTC_d8f5c.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_d8f5c.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xCnyyx/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xCnyyx/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xCnyyx/CheckSymbolExists.c:14:19: error: ‘_i64toa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_i64toa))[argc];
+      |                   ^~~~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xCnyyx/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_d8f5c.dir/build.make:78: CMakeFiles/cmTC_d8f5c.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-xCnyyx'
+gmake: *** [Makefile:127: cmTC_d8f5c/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _i64toa
+  return ((int*)(&_i64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _ui64toa exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-CmIyL1
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a588e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a588e.dir/build.make CMakeFiles/cmTC_a588e.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-CmIyL1'
+Building C object CMakeFiles/cmTC_a588e.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_a588e.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-CmIyL1/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-CmIyL1/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-CmIyL1/CheckSymbolExists.c:14:19: error: ‘_ui64toa’ undeclared (first use in this function)
+   14 |   return ((int*)(&_ui64toa))[argc];
+      |                   ^~~~~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-CmIyL1/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_a588e.dir/build.make:78: CMakeFiles/cmTC_a588e.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-CmIyL1'
+gmake: *** [Makefile:127: cmTC_a588e/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _ui64toa
+  return ((int*)(&_ui64toa))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _stricmp exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkWSBO
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_31481/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_31481.dir/build.make CMakeFiles/cmTC_31481.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkWSBO'
+Building C object CMakeFiles/cmTC_31481.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_31481.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkWSBO/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkWSBO/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkWSBO/CheckSymbolExists.c:14:19: error: ‘_stricmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   14 |   return ((int*)(&_stricmp))[argc];
+      |                   ^~~~~~~~
+      |                   strncmp
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkWSBO/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_31481.dir/build.make:78: CMakeFiles/cmTC_31481.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkWSBO'
+gmake: *** [Makefile:127: cmTC_31481/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _stricmp
+  return ((int*)(&_stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _strnicmp exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-870BrC
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_01442/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_01442.dir/build.make CMakeFiles/cmTC_01442.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-870BrC'
+Building C object CMakeFiles/cmTC_01442.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_01442.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-870BrC/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-870BrC/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-870BrC/CheckSymbolExists.c:14:19: error: ‘_strnicmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+   14 |   return ((int*)(&_strnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   strncmp
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-870BrC/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_01442.dir/build.make:78: CMakeFiles/cmTC_01442.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-870BrC'
+gmake: *** [Makefile:127: cmTC_01442/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strnicmp
+  return ((int*)(&_strnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsdup exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uJ6gRk
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4b142/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4b142.dir/build.make CMakeFiles/cmTC_4b142.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uJ6gRk'
+Building C object CMakeFiles/cmTC_4b142.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_4b142.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uJ6gRk/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uJ6gRk/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uJ6gRk/CheckSymbolExists.c:14:19: error: ‘_wcsdup’ undeclared (first use in this function); did you mean ‘wcsdup’?
+   14 |   return ((int*)(&_wcsdup))[argc];
+      |                   ^~~~~~~
+      |                   wcsdup
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uJ6gRk/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_4b142.dir/build.make:78: CMakeFiles/cmTC_4b142.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uJ6gRk'
+gmake: *** [Makefile:127: cmTC_4b142/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsdup
+  return ((int*)(&_wcsdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcat exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-2p6drc
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e6074/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e6074.dir/build.make CMakeFiles/cmTC_e6074.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-2p6drc'
+Building C object CMakeFiles/cmTC_e6074.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_e6074.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-2p6drc/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-2p6drc/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-2p6drc/CheckSymbolExists.c:14:19: error: ‘wcslcat’ undeclared (first use in this function); did you mean ‘wcsncat’?
+   14 |   return ((int*)(&wcslcat))[argc];
+      |                   ^~~~~~~
+      |                   wcsncat
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-2p6drc/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_e6074.dir/build.make:78: CMakeFiles/cmTC_e6074.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-2p6drc'
+gmake: *** [Makefile:127: cmTC_e6074/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcat
+  return ((int*)(&wcslcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the wcslcpy exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkrWB7
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4c3c7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4c3c7.dir/build.make CMakeFiles/cmTC_4c3c7.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkrWB7'
+Building C object CMakeFiles/cmTC_4c3c7.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_4c3c7.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkrWB7/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkrWB7/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkrWB7/CheckSymbolExists.c:14:19: error: ‘wcslcpy’ undeclared (first use in this function); did you mean ‘wcsncpy’?
+   14 |   return ((int*)(&wcslcpy))[argc];
+      |                   ^~~~~~~
+      |                   wcsncpy
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkrWB7/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_4c3c7.dir/build.make:78: CMakeFiles/cmTC_4c3c7.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-pkrWB7'
+gmake: *** [Makefile:127: cmTC_4c3c7/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef wcslcpy
+  return ((int*)(&wcslcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsicmp exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4bzxXv
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6ff2a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6ff2a.dir/build.make CMakeFiles/cmTC_6ff2a.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4bzxXv'
+Building C object CMakeFiles/cmTC_6ff2a.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_6ff2a.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4bzxXv/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4bzxXv/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4bzxXv/CheckSymbolExists.c:14:19: error: ‘_wcsicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
+   14 |   return ((int*)(&_wcsicmp))[argc];
+      |                   ^~~~~~~~
+      |                   wcsncmp
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4bzxXv/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_6ff2a.dir/build.make:78: CMakeFiles/cmTC_6ff2a.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-4bzxXv'
+gmake: *** [Makefile:127: cmTC_6ff2a/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsicmp
+  return ((int*)(&_wcsicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the _wcsnicmp exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-5vBI2i
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e0c39/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e0c39.dir/build.make CMakeFiles/cmTC_e0c39.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-5vBI2i'
+Building C object CMakeFiles/cmTC_e0c39.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_e0c39.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-5vBI2i/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-5vBI2i/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-5vBI2i/CheckSymbolExists.c:14:19: error: ‘_wcsnicmp’ undeclared (first use in this function); did you mean ‘wcsncmp’?
+   14 |   return ((int*)(&_wcsnicmp))[argc];
+      |                   ^~~~~~~~~
+      |                   wcsncmp
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-5vBI2i/CheckSymbolExists.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_e0c39.dir/build.make:78: CMakeFiles/cmTC_e0c39.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-5vBI2i'
+gmake: *** [Makefile:127: cmTC_e0c39/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <stddef.h>
+#include <stdarg.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _wcsnicmp
+  return ((int*)(&_wcsnicmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctlbyname exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-rd5yhG
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_83422/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_83422.dir/build.make CMakeFiles/cmTC_83422.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-rd5yhG'
+Building C object CMakeFiles/cmTC_83422.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_83422.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-rd5yhG/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-rd5yhG/CheckSymbolExists.c:3:10: fatal error: sys/sysctl.h: No such file or directory
+    3 | #include <sys/sysctl.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_83422.dir/build.make:78: CMakeFiles/cmTC_83422.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-rd5yhG'
+gmake: *** [Makefile:127: cmTC_83422/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <sys/sysctl.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctlbyname
+  return ((int*)(&sysctlbyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the elf_aux_info exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-UAjWeE
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_55597/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_55597.dir/build.make CMakeFiles/cmTC_55597.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-UAjWeE'
+Building C object CMakeFiles/cmTC_55597.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_55597.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-UAjWeE/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-UAjWeE/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-UAjWeE/CheckSymbolExists.c:8:19: error: ‘elf_aux_info’ undeclared (first use in this function)
+    8 |   return ((int*)(&elf_aux_info))[argc];
+      |                   ^~~~~~~~~~~~
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-UAjWeE/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_55597.dir/build.make:78: CMakeFiles/cmTC_55597.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-UAjWeE'
+gmake: *** [Makefile:127: cmTC_55597/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef elf_aux_info
+  return ((int*)(&elf_aux_info))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-232pQ6
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1111a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1111a.dir/build.make CMakeFiles/cmTC_1111a.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-232pQ6'
+Building C object CMakeFiles/cmTC_1111a.dir/CheckFunctionExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_1111a.dir/CheckFunctionExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-232pQ6/CheckFunctionExists.c
+Linking C executable cmTC_1111a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1111a.dir/link.txt --verbose=1
+/usr/bin/arm-linux-gnueabihf-gcc  -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos" -DCHECK_FUNCTION_EXISTS=iconv_open  -D_GNU_SOURCE=1 CMakeFiles/cmTC_1111a.dir/CheckFunctionExists.c.o -o cmTC_1111a  -liconv 
+/usr/lib/gcc-cross/arm-linux-gnueabihf/12/../../../../arm-linux-gnueabihf/bin/ld: cannot find -liconv: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_1111a.dir/build.make:99: cmTC_1111a] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-232pQ6'
+gmake: *** [Makefile:127: cmTC_1111a/fast] Error 2
+
+
+
+Determining if the alloca exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-EMHBTb
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f1e5f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f1e5f.dir/build.make CMakeFiles/cmTC_f1e5f.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-EMHBTb'
+Building C object CMakeFiles/cmTC_f1e5f.dir/CheckSymbolExists.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_f1e5f.dir/CheckSymbolExists.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-EMHBTb/CheckSymbolExists.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-EMHBTb/CheckSymbolExists.c: In function ‘main’:
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-EMHBTb/CheckSymbolExists.c:8:19: error: ‘alloca’ undeclared (first use in this function); did you mean ‘valloc’?
+    8 |   return ((int*)(&alloca))[argc];
+      |                   ^~~~~~
+      |                   valloc
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-EMHBTb/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_f1e5f.dir/build.make:78: CMakeFiles/cmTC_f1e5f.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-EMHBTb'
+gmake: *** [Makefile:127: cmTC_f1e5f/fast] Error 2
+
+
+File CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alloca
+  return ((int*)(&alloca))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-a3RSJq
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d51ed/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d51ed.dir/build.make CMakeFiles/cmTC_d51ed.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-a3RSJq'
+Building C object CMakeFiles/cmTC_d51ed.dir/CheckIncludeFile.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_d51ed.dir/CheckIncludeFile.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-a3RSJq/CheckIncludeFile.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-a3RSJq/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: No such file or directory
+    1 | #include <audio/audiolib.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_d51ed.dir/build.make:78: CMakeFiles/cmTC_d51ed.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-a3RSJq'
+gmake: *** [Makefile:127: cmTC_d51ed/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_RPI failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-T8W6qm
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_523b9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_523b9.dir/build.make CMakeFiles/cmTC_523b9.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-T8W6qm'
+Building C object CMakeFiles/cmTC_523b9.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DHAVE_RPI  -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1  -I/opt/vc/include -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include/interface/vmcs_host/linux/  -L/opt/vc/lib -o CMakeFiles/cmTC_523b9.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-T8W6qm/src.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-T8W6qm/src.c:2:18: fatal error: bcm_host.h: No such file or directory
+    2 |         #include <bcm_host.h>
+      |                  ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_523b9.dir/build.make:78: CMakeFiles/cmTC_523b9.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-T8W6qm'
+gmake: *** [Makefile:127: cmTC_523b9/fast] Error 2
+
+
+Source file was:
+
+        #include <bcm_host.h>
+        #include <EGL/eglplatform.h>
+        int main(int argc, char **argv) {
+          EGL_DISPMANX_WINDOW_T window;
+          bcm_host_init();
+        }
+
+Performing C SOURCE FILE Test HAVE_OPENGL_GLX failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-LtOoCv
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0b5d7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0b5d7.dir/build.make CMakeFiles/cmTC_0b5d7.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-LtOoCv'
+Building C object CMakeFiles/cmTC_0b5d7.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DHAVE_OPENGL_GLX  -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_0b5d7.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-LtOoCv/src.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-LtOoCv/src.c:2:18: fatal error: GL/glx.h: No such file or directory
+    2 |         #include <GL/glx.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_0b5d7.dir/build.make:78: CMakeFiles/cmTC_0b5d7.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-LtOoCv'
+gmake: *** [Makefile:127: cmTC_0b5d7/fast] Error 2
+
+
+Source file was:
+
+        #include <GL/glx.h>
+        int main(int argc, char** argv) { return 0; }
+
+Performing C SOURCE FILE Test HAVE_OPENGL failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-6DGt0p
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_439a0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_439a0.dir/build.make CMakeFiles/cmTC_439a0.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-6DGt0p'
+Building C object CMakeFiles/cmTC_439a0.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DHAVE_OPENGL  -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_439a0.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-6DGt0p/src.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-6DGt0p/src.c:2:18: fatal error: GL/gl.h: No such file or directory
+    2 |         #include <GL/gl.h>
+      |                  ^~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_439a0.dir/build.make:78: CMakeFiles/cmTC_439a0.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-6DGt0p'
+gmake: *** [Makefile:127: cmTC_439a0/fast] Error 2
+
+
+Source file was:
+
+        #include <GL/gl.h>
+        #include <GL/glext.h>
+        int main(int argc, char** argv) { return 0; }
+
+Performing C SOURCE FILE Test HAVE_OPENGLES_V1 failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uKmGeP
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_36992/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_36992.dir/build.make CMakeFiles/cmTC_36992.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uKmGeP'
+Building C object CMakeFiles/cmTC_36992.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DHAVE_OPENGLES_V1  -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_36992.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uKmGeP/src.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uKmGeP/src.c:2:18: fatal error: GLES/gl.h: No such file or directory
+    2 |         #include <GLES/gl.h>
+      |                  ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_36992.dir/build.make:78: CMakeFiles/cmTC_36992.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-uKmGeP'
+gmake: *** [Makefile:127: cmTC_36992/fast] Error 2
+
+
+Source file was:
+
+        #include <GLES/gl.h>
+        #include <GLES/glext.h>
+        int main (int argc, char** argv) { return 0; }
+
+Performing C SOURCE FILE Test HAVE_VIVANTE_VDK failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-oa3Dzt
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d075a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d075a.dir/build.make CMakeFiles/cmTC_d075a.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-oa3Dzt'
+Building C object CMakeFiles/cmTC_d075a.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DHAVE_VIVANTE_VDK  -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_d075a.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-oa3Dzt/src.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-oa3Dzt/src.c:2:18: fatal error: gc_vdk.h: No such file or directory
+    2 |         #include <gc_vdk.h>
+      |                  ^~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_d075a.dir/build.make:78: CMakeFiles/cmTC_d075a.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-oa3Dzt'
+gmake: *** [Makefile:127: cmTC_d075a/fast] Error 2
+
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) { return 0; }
+
+Performing C SOURCE FILE Test HAVE_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-9sooZW
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58e7c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_58e7c.dir/build.make CMakeFiles/cmTC_58e7c.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-9sooZW'
+Building C object CMakeFiles/cmTC_58e7c.dir/src.c.o
+/usr/bin/arm-linux-gnueabihf-gcc -DHAVE_VIVANTE_EGL_FB  -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_58e7c.dir/src.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-9sooZW/src.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-9sooZW/src.c:4:18: fatal error: EGL/eglvivante.h: No such file or directory
+    4 |         #include <EGL/eglvivante.h>
+      |                  ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_58e7c.dir/build.make:78: CMakeFiles/cmTC_58e7c.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-9sooZW'
+gmake: *** [Makefile:127: cmTC_58e7c/fast] Error 2
+
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) { return 0; }
+
+Determining if the include file libudev.h exists failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-HaXjUo
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_48dee/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_48dee.dir/build.make CMakeFiles/cmTC_48dee.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-HaXjUo'
+Building C object CMakeFiles/cmTC_48dee.dir/CheckIncludeFile.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_48dee.dir/CheckIncludeFile.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-HaXjUo/CheckIncludeFile.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-HaXjUo/CheckIncludeFile.c:1:10: fatal error: libudev.h: No such file or directory
+    1 | #include <libudev.h>
+      |          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_48dee.dir/build.make:78: CMakeFiles/cmTC_48dee.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-HaXjUo'
+gmake: *** [Makefile:127: cmTC_48dee/fast] Error 2
+
+
+
+Determining if files pthread_np.h exist failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-usEzMb
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_991bd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_991bd.dir/build.make CMakeFiles/cmTC_991bd.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-usEzMb'
+Building C object CMakeFiles/cmTC_991bd.dir/HAVE_PTHREAD_NP_H.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos"  -D_GNU_SOURCE=1 -D_REENTRANT -pthread -o CMakeFiles/cmTC_991bd.dir/HAVE_PTHREAD_NP_H.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-usEzMb/HAVE_PTHREAD_NP_H.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-usEzMb/HAVE_PTHREAD_NP_H.c:2:10: fatal error: pthread_np.h: No such file or directory
+    2 | #include <pthread_np.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_991bd.dir/build.make:78: CMakeFiles/cmTC_991bd.dir/HAVE_PTHREAD_NP_H.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-usEzMb'
+gmake: *** [Makefile:127: cmTC_991bd/fast] Error 2
+
+
+Source:
+/* */
+#include <pthread_np.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file samplerate.h exists failed with the following output:
+Change Dir: /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-YtLJfs
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_28f6e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_28f6e.dir/build.make CMakeFiles/cmTC_28f6e.dir/build
+gmake[1]: Entering directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-YtLJfs'
+Building C object CMakeFiles/cmTC_28f6e.dir/CheckIncludeFile.c.o
+/usr/bin/arm-linux-gnueabihf-gcc   -idirafter "/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/src/video/khronos" -DHAVE_LINUX_VERSION_H  -D_GNU_SOURCE=1 -o CMakeFiles/cmTC_28f6e.dir/CheckIncludeFile.c.o -c /home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-YtLJfs/CheckIncludeFile.c
+/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-YtLJfs/CheckIncludeFile.c:1:10: fatal error: samplerate.h: No such file or directory
+    1 | #include <samplerate.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_28f6e.dir/build.make:78: CMakeFiles/cmTC_28f6e.dir/CheckIncludeFile.c.o] Error 1
+gmake[1]: Leaving directory '/home/akhashi/Projects/zigUiLib/SDL2-2.28.3/Trim/CMakeFiles/CMakeScratch/TryCompile-YtLJfs'
+gmake: *** [Makefile:127: cmTC_28f6e/fast] Error 2
+
+
+
