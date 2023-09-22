@@ -1,3 +1,4 @@
+//modified by Ahegys
 const std = @import("std");
 const c = @cImport(@cInclude("SDL2/SDL.h"));
 
