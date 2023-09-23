@@ -1,0 +1,21 @@
+pub const c = @cImport(@cInclude("SDL2/SDL.h"));
+
+pub const CENTERED = c.STD_WINDOWPOS_CENTERED;
+pub const UNDEFINED = c.SDL_WINDOWPOS_UNDEFINED;
+
+pub const FULLSCREEN = c.SDL_WINDOW_FULLSCREEN;
+pub const FULLSCREEN_DESKTOP = c.SDL_WINDOW_FULLSCREEN_DESKTOP;
+pub const OPENGL = c.SDL_WINDOW_OPENGL;
+pub const VULKAN = c.SDL_WINDOW_VULKAN;
+pub const METAL = c.SDL_WINDOW_METAL;
+pub const HIDDEN = c.SDL_WINDOW_HIDDEN;
+pub const BORDERLESS = c.SDL_WINDOW_BORDERLESS;
+pub const RESIZABLE = c.SDL_WINDOW_RESIZABLE;
+pub const MINIMIZED = c.SDL_WINDOW_MINIMIZED;
+pub const MAXIMIZED = c.SDL_WINDOW_MAXIMIZED;
+pub const GRABBED = c.SDL_WINDOW_INPUT_GRABBED;
+pub const HIGHDPI = c.SDL_WINDOW_ALLOW_HIGHDPI;
+pub const DEFAULT = c.SDL_WINDOW_SHOWN;
+pub const ZiggError = c.SDL_GetError;
+pub var ctx: c_uint = DEFAULT;
+pub var window: ?*c.SDL_Window = null;
