@@ -18,8 +18,8 @@ Follow these steps to run the GUI:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-project.git
-   cd your-project
+   git clone https://github.com/Ahegys/ZiggerUI.git
+   cd ZiggerUI
    ```
 
 2. Run and build:
