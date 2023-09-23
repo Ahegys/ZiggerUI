@@ -1,6 +1,7 @@
-const c = @cImport(@cInclude("SDL2/SDL.h"));
 const get = @import("../config/init_lib.zig");
 const print = @import("std").debug.print;
+const props = @import("../layers/layer.zig");
+
 pub const Color = struct {
     r: u8,
     g: u8,
@@ -8,16 +9,15 @@ pub const Color = struct {
     a: u8,
 };
 
-pub fn pixel(setRender: ?*c.SDL_Renderer, x: i32, y: i32, color: Color) void {
-    const result = c.SDL_SetRenderDrawColor(setRender, color.r, color.g, color.b, color.a);
+pub fn pixel(setRender: ?*props.c.SDL_Renderer, x: i32, y: i32, color: Color) void {
+    const result = props.c.SDL_SetRenderDrawColor(setRender, color.r, color.g, color.b, color.a);
     if (result < 0) {
-        print("Error to set color: {s}\n", .{get.ZiggError()});
+        print("Error to set color: {s}\n", .{props.ZiggError()});
     }
-    var res = c.SDL_RenderDrawPoint(setRender, x, y);
+    var res = props.c.SDL_RenderDrawPoint(setRender, x, y);
     if (res < 0) {
-        print("Error to set color: {s}\n", .{get.ZiggError()});
+        print("Error to set color: {s}\n", .{props.ZiggError()});
     }
 
-    // Atualizar a janela
-    c.SDL_RenderPresent(setRender);
+    props.c.SDL_RenderPresent(setRender);
 }
