@@ -29,7 +29,7 @@ pub const init = struct {
 
         if (c.SDL_Init(c.SDL_INIT_VIDEO) < 0) {
             const sdlError = c.SDL_GetError();
-            print("Error starting Zigger: {s}\n", .{sdlError});
+            print("Error starting SDL: {s}\n", .{sdlError});
             return error.InitFailed;
         }
         defer c.SDL_Quit();
@@ -39,7 +39,6 @@ pub const init = struct {
             print("Error starting window: {s}\n", .{ZiggError()});
             return error.InitFailed;
         }
-
         var exit: bool = false;
         var event: c.SDL_Event = undefined;
 
