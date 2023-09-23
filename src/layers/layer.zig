@@ -1,4 +1,5 @@
 pub const c = @cImport(@cInclude("SDL2/SDL.h"));
+const print = @import("std").debug.print;
 
 pub const CENTERED = c.STD_WINDOWPOS_CENTERED;
 pub const UNDEFINED = c.SDL_WINDOWPOS_UNDEFINED;
@@ -33,3 +34,11 @@ pub const GetError = c.SDL_GetError;
 pub const Destroy = c.SDL_DestroyWindow;
 pub const defQuit = c.SDL_Quit;
 pub const RENDERER_ACCELERATED = c.SDL_RENDERER_ACCELERATED;
+
+pub fn StartDisplay() !void {
+    if (Start(StartVideo) < 0) {
+        print("Error starting SDL: {s}\n", .{GetError()});
+        return error.InitFailed;
+    }
+    defer defQuit();
+}

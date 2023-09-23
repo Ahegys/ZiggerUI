@@ -11,12 +11,7 @@ pub const init = struct {
     pub fn display(width: i16, height: i16, comptime title: [*c]const u8, render: *const fn (?*props.c.SDL_Renderer) void, setup: *const fn () void) !void {
         const print = std.debug.print;
 
-        if (props.Start(props.StartVideo) < 0) {
-            const sdlError = props.c.SDL_GetError();
-            print("Error starting SDL: {s}\n", .{sdlError});
-            return error.InitFailed;
-        }
-        defer props.defQuit();
+        try props.StartDisplay();
         window = props.setWindow(title, setWinX, setWinY, width, height, ctx);
         if (window == null) {
             print("Error starting window: {s}\n", .{props.ZiggError()});
