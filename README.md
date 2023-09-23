@@ -2,7 +2,7 @@
 
 ![Screenshot of the GUI Interface](screenshot.png)
 
-This is a simple GUI project created in Zig, using the SDL (Simple DirectMedia Layer) library. The GUI includes [describe what the GUI does or its key features].
+This is a simple GUI project created in Zig, using the SDL (Simple DirectMedia Layer) library. The GUI includes.
 
 ## Prerequisites
 
