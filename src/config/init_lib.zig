@@ -1,7 +1,7 @@
 const std = @import("std");
 const props = @import("../layers/layer.zig");
 
-pub var ctx: c_uint = props.DEFAULT;
+pub var ctx: c_uint = props.OPENGL;
 pub var window: ?*props.c.SDL_Window = null;
 
 pub const init = struct {
@@ -21,6 +21,7 @@ pub const init = struct {
         if (setRender == null) {
             print("Error to set renderer: {s}\n", .{props.ZiggError()});
         }
+
         var exit: bool = false;
         var event: props.Event = undefined;
 
@@ -36,7 +37,6 @@ pub const init = struct {
                 print("Error to set renderer: {s}\n", .{props.ZiggError()});
             }
             _ = props.ClearRender(setRender);
-
             render(setRender);
         }
         props.Destroy(window);

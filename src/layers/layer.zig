@@ -4,11 +4,13 @@ const print = @import("std").debug.print;
 pub const CENTERED = c.STD_WINDOWPOS_CENTERED;
 pub const UNDEFINED = c.SDL_WINDOWPOS_UNDEFINED;
 
-pub const FULLSCREEN = c.SDL_WINDOW_FULLSCREEN;
-pub const FULLSCREEN_DESKTOP = c.SDL_WINDOW_FULLSCREEN_DESKTOP;
+// graphic engines
 pub const OPENGL = c.SDL_WINDOW_OPENGL;
 pub const VULKAN = c.SDL_WINDOW_VULKAN;
 pub const METAL = c.SDL_WINDOW_METAL;
+// screen setups
+pub const FULLSCREEN = c.SDL_WINDOW_FULLSCREEN;
+pub const FULLSCREEN_DESKTOP = c.SDL_WINDOW_FULLSCREEN_DESKTOP;
 pub const HIDDEN = c.SDL_WINDOW_HIDDEN;
 pub const BORDERLESS = c.SDL_WINDOW_BORDERLESS;
 pub const RESIZABLE = c.SDL_WINDOW_RESIZABLE;
@@ -34,6 +36,7 @@ pub const GetError = c.SDL_GetError;
 pub const Destroy = c.SDL_DestroyWindow;
 pub const defQuit = c.SDL_Quit;
 pub const RENDERER_ACCELERATED = c.SDL_RENDERER_ACCELERATED;
+pub const Loop = c.SDL_RenderPresent;
 
 pub fn StartDisplay() !void {
     if (Start(StartVideo) < 0) {

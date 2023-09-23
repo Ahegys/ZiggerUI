@@ -18,6 +18,6 @@ pub fn pixel(setRender: ?*props.c.SDL_Renderer, x: i32, y: i32, color: Color) vo
     if (res < 0) {
         print("Error to set color: {s}\n", .{props.ZiggError()});
     }
-
-    props.c.SDL_RenderPresent(setRender);
+    _ = props.ClearRender(setRender);
+    props.Loop(setRender);
 }
