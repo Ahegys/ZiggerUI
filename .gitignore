@@ -1,4 +1,4 @@
-.git
+*.git
 zig-cache
 zig-out
-.gitignore
+*.gitignore

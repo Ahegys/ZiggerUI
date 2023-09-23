@@ -10,11 +10,11 @@ pub const Color = struct {
 };
 
 pub fn pixel(setRender: ?*props.c.SDL_Renderer, x: i32, y: i32, color: Color) void {
-    const result = props.c.SDL_SetRenderDrawColor(setRender, color.r, color.g, color.b, color.a);
+    const result = props.DrawColor(setRender, color.r, color.g, color.b, color.a);
     if (result < 0) {
         print("Error to set color: {s}\n", .{props.ZiggError()});
     }
-    var res = props.c.SDL_RenderDrawPoint(setRender, x, y);
+    var res = props.DrawPoint(setRender, x, y);
     if (res < 0) {
         print("Error to set color: {s}\n", .{props.ZiggError()});
     }

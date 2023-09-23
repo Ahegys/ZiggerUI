@@ -22,9 +22,7 @@ fn render(win: ?*c.SDL_Renderer) void {
     }
 }
 
-fn setup() void {
-    std.debug.print("Hello World from {s} ", .{"setup"});
-}
+fn setup() void {}
 
 pub fn main() !void {
     try create.init.display(320, 240, "window", render, setup);
