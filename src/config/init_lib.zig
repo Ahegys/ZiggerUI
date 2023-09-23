@@ -24,7 +24,7 @@ pub const init = struct {
     pub const setWinX: c_int = UNDEFINED;
     pub const setWinY: c_int = UNDEFINED;
 
-    pub fn init_display(width: i16, height: i16, comptime title: [*c]const u8) !void {
+    pub fn init_display(width: i16, height: i16, comptime title: [*c]const u8, render: *const fn () void, setup: *const fn () void) !void {
         const print = std.debug.print;
 
         if (c.SDL_Init(c.SDL_INIT_VIDEO) < 0) {
@@ -33,7 +33,8 @@ pub const init = struct {
             return error.InitFailed;
         }
         defer c.SDL_Quit();
-
+        setup();
+        render();
         const window = c.SDL_CreateWindow(title, setWinX, setWinY, width, height, ctx);
         if (window == null) {
             print("Error starting window: {s}\n", .{ZiggError()});
