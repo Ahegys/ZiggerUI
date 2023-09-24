@@ -5,10 +5,10 @@ const set = @import("./config/pixel.zig");
 const c = @cImport(@cInclude("SDL2/SDL.h"));
 
 fn render(win: ?*c.SDL_Renderer) void {
-    const color = set.Color{
-        .r = 255,
-        .g = 122,
-        .b = 30,
+    var color = set.Color{
+        .r = 0,
+        .g = 0,
+        .b = 255,
         .a = 255,
     };
     var i: i32 = 0;
@@ -20,6 +20,7 @@ fn render(win: ?*c.SDL_Renderer) void {
         }
         i += 1;
     }
+    try create.init.ClearRender(win);
 }
 
 fn setup() void {}

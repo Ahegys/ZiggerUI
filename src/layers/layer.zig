@@ -37,11 +37,28 @@ pub const Destroy = c.SDL_DestroyWindow;
 pub const defQuit = c.SDL_Quit;
 pub const RENDERER_ACCELERATED = c.SDL_RENDERER_ACCELERATED;
 pub const Loop = c.SDL_RenderPresent;
-
+pub const setWinX: c_int = UNDEFINED;
+pub const setWinY: c_int = UNDEFINED;
+pub var setRender: ?*c.SDL_Renderer = null;
 pub fn StartDisplay() !void {
     if (Start(StartVideo) < 0) {
         print("Error starting SDL: {s}\n", .{GetError()});
         return error.InitFailed;
     }
     defer defQuit();
+}
+
+pub fn StartWindow(width: i16, height: i16, comptime title: [*c]const u8, context: c_uint) !void {
+    window = setWindow(title, setWinX, setWinY, width, height, context);
+    if (window == null) {
+        print("Error starting window: {s}\n", .{ZiggError()});
+        return error.InitFailed;
+    }
+}
+
+pub fn render() !void {
+    setRender = setRenderer(window, -1, RENDERER_ACCELERATED);
+    if (setRender == null) {
+        print("Error to set renderer: {s}\n", .{ZiggError()});
+    }
 }
