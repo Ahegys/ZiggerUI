@@ -13,6 +13,7 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
     exeX86.linkSystemLibraryName("SDL2");
+    exeX86.linkSystemLibraryName("SDL2_image");
     exeX86.linkSystemLibraryName("c");
     b.installArtifact(exeX86);
 }

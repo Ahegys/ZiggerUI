@@ -1,5 +1,5 @@
 pub const c = @cImport(@cInclude("SDL2/SDL.h"));
-const print = @import("std").debug.print;
+pub const print = @import("std").debug.print;
 
 pub const CENTERED = c.STD_WINDOWPOS_CENTERED;
 pub const UNDEFINED = c.SDL_WINDOWPOS_UNDEFINED;
