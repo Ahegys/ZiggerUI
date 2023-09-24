@@ -40,6 +40,7 @@ pub const Loop = c.SDL_RenderPresent;
 pub const setWinX: c_int = UNDEFINED;
 pub const setWinY: c_int = UNDEFINED;
 pub var setRender: ?*c.SDL_Renderer = null;
+
 pub fn StartDisplay() !void {
     if (Start(StartVideo) < 0) {
         print("Error starting SDL: {s}\n", .{GetError()});

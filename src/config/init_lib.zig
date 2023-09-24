@@ -1,5 +1,6 @@
 const std = @import("std");
 const props = @import("../layers/layer.zig");
+const set = @import("../config/pixel.zig");
 
 pub var ctx: c_uint = props.OPENGL;
 
@@ -11,7 +12,6 @@ pub const init = struct {
     }
 
     pub fn LoopHook(render: *const fn (?*props.c.SDL_Renderer) void, setup: *const fn () void) !void {
-        const print = std.debug.print;
         var exit: bool = false;
         var event: props.Event = undefined;
 
@@ -21,17 +21,19 @@ pub const init = struct {
                     exit = true;
                 }
             }
-            const result = props.DrawColor(props.setRender, 0, 0, 0, 255);
-            if (result < 0) {
-                print("Error to set renderer: {s}\n", .{props.ZiggError()});
-            }
-            try ClearRender(props.setRender);
-
             setup();
             render(props.setRender);
         }
         props.Loop(props.setRender);
         props.Destroy(props.window);
+    }
+
+    pub fn Background(renderer: ?*props.c.SDL_Renderer, color: set.Color) void {
+        _ = props.DrawColor(renderer, color.r, color.g, color.b, color.a);
+        try ClearRender(renderer);
+    }
+    pub fn setLoop(win: ?*props.c.SDL_Renderer) !void {
+        props.Loop(win);
     }
 
     pub fn ClearRender(win: ?*props.c.SDL_Renderer) !void {

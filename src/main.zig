@@ -4,13 +4,21 @@ const create = @import("./config/init_lib.zig");
 const set = @import("./config/pixel.zig");
 const c = @cImport(@cInclude("SDL2/SDL.h"));
 const tes = @import("./layers/layer.zig");
+
 fn render(win: ?*c.SDL_Renderer) void {
     var color = set.Color{
         .r = 255,
-        .g = 255,
-        .b = 255,
+        .g = 0,
+        .b = 0,
         .a = 255,
     };
+    var backColor = set.Color{
+        .r = 0,
+        .g = 0,
+        .b = 0,
+        .a = 255,
+    };
+    create.init.Background(win, backColor);
     var i: i32 = 0;
     while (i < 40) {
         var j: i32 = 0;
@@ -20,7 +28,7 @@ fn render(win: ?*c.SDL_Renderer) void {
         }
         i += 1;
     }
-    tes.Loop(win);
+    try create.init.setLoop(win);
     try create.init.ClearRender(win);
 }
 
