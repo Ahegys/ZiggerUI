@@ -1,6 +1,6 @@
 # Zig GUI Interface with SDL
 
-![Screenshot of the GUI Interface](screenshot.png)
+![Screenshot of the GUI Interface](./screenshots/screenshot.png)
 
 This is a simple GUI project created in Zig, using the SDL (Simple DirectMedia Layer) library. The GUI includes.
 
