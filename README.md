@@ -1,4 +1,4 @@
-# Zig GUI Interface with SDL
+# ZiggerUI
 
 ![Screenshot of the GUI Interface](./screenshots/screenshot.png)
 
