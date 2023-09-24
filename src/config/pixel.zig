@@ -9,12 +9,12 @@ pub const Color = struct {
     a: u8,
 };
 
-pub fn pixel(setRender: ?*props.c.SDL_Renderer, x: i32, y: i32, color: Color) void {
-    const result = props.DrawColor(setRender, color.r, color.g, color.b, color.a);
+pub fn pixel(renderer: ?*props.c.SDL_Renderer, x: i32, y: i32, color: Color) void {
+    const result = props.DrawColor(renderer, color.r, color.g, color.b, color.a);
     if (result != 0) {
         print("Could not draw on the screen: {s}\n", .{props.ZiggError()});
     }
-    const res = props.DrawPoint(setRender, x, y);
+    const res = props.DrawPoint(renderer, x, y);
     if (res != 0) {
         print("Could not draw on the screen: {s}\n", .{props.ZiggError()});
     }
