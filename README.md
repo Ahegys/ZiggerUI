@@ -28,3 +28,5 @@ Follow these steps to run the GUI:
    zig build
    ./zig-out/bin/Zigger_x86
    ```
+## LICENSE
+[MIT](./LICENSE)
