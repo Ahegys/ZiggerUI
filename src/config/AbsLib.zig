@@ -1,10 +1,11 @@
-const sdl = @cImport({
-    @cInclude("SDL2/SDL.h");
-    @cInclude("SDL2/SDL_image.h");
-});
+
 
 const print = @import("std").debug.print;
 pub const Setup = struct {
+   pub const sdl = @cImport({
+    @cInclude("SDL2/SDL.h");
+    @cInclude("SDL2/SDL_image.h");
+});
     pub const Color = struct {
         r: u8,
         g: u8,
@@ -52,5 +53,41 @@ pub const Setup = struct {
     pub fn Loop() void {
         sdl.SDL_RenderPresent(renderer);
         _ = sdl.SDL_RenderClear(renderer);
+    }
+
+    pub fn Img(path: [*c]const u8, src: ?*sdl.SDL_Rect, dst: ?*sdl.SDL_Rect)  !?*sdl.SDL_Texture {
+        _ = sdl.IMG_Init(sdl.IMG_INIT_PNG);
+        const imgPtr = sdl.IMG_Load(path);
+        if (imgPtr == null) {
+            print("Error unable to load image in path: {s}\n[ {s} ]", .{path, sdl.IMG_GetError()});
+            return error.IMG_GetError;
+        }
+        const texture = sdl.SDL_CreateTextureFromSurface(renderer, imgPtr);
+        _ = sdl.SDL_FreeSurface(imgPtr);
+        if (texture == null) {
+            print("Error unable to load texture in path: {s}\n ]", .{sdl.IMG_GetError()});
+             return error.IMG_GetError;
+        }
+        _ = sdl.SDL_RenderCopy(renderer, texture, src, dst);
+        return texture;
+    }
+
+    pub fn LoadTexture(img: [*c]sdl.SDL_Surface) !?*sdl.SDL_Texture {
+        _ = img;
+        
+    }
+
+    pub fn ConfigTexture(texture: ?*sdl.SDL_Texture, src: ?*sdl.SDL_Rect, dst: ?*sdl.SDL_Rect) void {
+        _ = dst;
+        _ = src;
+        _ = texture;
+        
+    }
+    
+    pub fn DestroyImg(texture: ?*sdl.SDL_Texture) !void {
+        if (texture == null) {
+            return error.InitFailed;
+        }
+        _ = sdl.SDL_DestroyTexture(texture);
     }
 };
