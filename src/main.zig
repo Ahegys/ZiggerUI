@@ -1,29 +1,23 @@
-//modified by Ahegys
-const std = @import("std");
-const create = @import("./config/init_lib.zig");
-const set = @import("./config/pixel.zig");
-const c = @cImport(@cInclude("SDL2/SDL.h"));
-const tes = @import("./layers/layer.zig");
-const Img = @import("./layers/imageLoader.zig").Img;
-fn render(win: ?*c.SDL_Renderer) void {
-    var backColor = set.Color{
+const Setup = @import("./config/AbsLib.zig").Setup;
+const print = @import("std").debug.print;
+
+pub fn main() !void {
+    const back = Setup.Color{
         .r = 0,
         .g = 0,
         .b = 0,
         .a = 255,
     };
-    create.init.Background(win, backColor);
-    Img.path = "../screenshots/dog.png";
-    try Img.Load(win);
-    Img.Config(null, null);
-    Img.Destroy();
-    try create.init.setLoop(win);
-    try create.init.ClearRender(win);
-}
-
-fn setup() void {}
-
-pub fn main() !void {
-    try create.init.display(320, 240, "window");
-    try create.init.LoopHook(render, setup);
+    const color = Setup.Color{
+        .r = 0,
+        .g = 0,
+        .b = 255,
+        .a = 255,
+    };
+    try Setup.InitDisplay();
+    try Setup.Display(320, 480, "Hello Window");
+    Setup.Backgroud(back);
+    Setup.Pixel(40, 50, color);
+    Setup.Loop();
+    Setup.Delay(3000);
 }
