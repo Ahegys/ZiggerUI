@@ -46,6 +46,10 @@ pub const Setup = struct {
         _ = sdl.SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
         _ = sdl.SDL_RenderDrawPoint(renderer, x, y);
     }
+     pub fn LineTo(x: i32, y: i32, start: i32, end: i32, color: Color) void {
+        _ = sdl.SDL_SetRenderDrawColor(renderer, color.r, color.g, color.b, color.a);
+        _ = sdl.SDL_RenderDrawLine(renderer, x, y, start, end);
+    }
     pub fn Delay(time: u32) void {
         sdl.SDL_Delay(time);
     }
